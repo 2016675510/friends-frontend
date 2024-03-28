@@ -1,0 +1,11 @@
+# 使用官方nginx作为父镜像
+FROM nginx:stable-alpine
+
+# 复制前端构建产物到nginx的默认web根目录
+COPY ./dist /usr/share/nginx/html
+
+# 暴露端口
+EXPOSE 80
+
+# 设置容器启动时执行nginx
+CMD ["nginx", "-g", "daemon off;"]
