@@ -60,6 +60,17 @@ const originTagList = [{
       { text: '大三', id: '大三' },
       { text: '大四', id: '大四' },
       ],
+      }, {
+        text: '方向',
+      children: [
+      { text: 'Python', id: 'Python' },
+      { text: 'Java', id: 'Java' },
+      { text: '嵌入式', id: '嵌入式' },
+      { text: 'C++', id: 'C++' },
+      { text: '前端', id: '前端' },
+      { text: '后端', id: '后端' },
+      
+      ],
       },
       ];
       //标签列表

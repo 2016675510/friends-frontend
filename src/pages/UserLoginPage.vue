@@ -56,9 +56,9 @@ const onSubmit = async () => {
   })
   console.log(res,'用户登录');
   if (res.code == 0 && res.data){
-    // router.push({path:'/'});
-    const redirectUrl=route.query?.redirect as string ?? '/';
-    window.location.href=redirectUrl;
+    router.push({path:'/'});
+    // const redirectUrl=route.query?.redirect as string ?? '/';
+    // window.location.href=redirectUrl;
     showSuccessToast('登录成功');
   } else {
     showFailToast('登录失败')

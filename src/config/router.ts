@@ -13,7 +13,7 @@ import TeamAdd from "../pages/TeamAddPage.vue"
 import TeamUpdate from "../pages/TeamUpdatePage.vue"
 import TeamCreate from "../pages/TeamCreatePage.vue"
 import TeamJoin from "../pages/TeamJoinPage.vue"
-
+import UserUploadAvartor from "../pages/UserUploadAvartor.vue"
 
 // 定义一些路由
 const routes =[
@@ -25,6 +25,8 @@ const routes =[
 { path: '/user/list', component: SearchResult },
 { path: '/user/login', component: UserLogin },
 { path: '/user/register', component: UserRegister },
+{ path: '/user/edit/upload', component: UserUploadAvartor },
+
 
 { path: '/team/add', component: TeamAdd },
 { path: '/team/update', component: TeamUpdate },
