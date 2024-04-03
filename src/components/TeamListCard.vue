@@ -5,7 +5,7 @@
     <van-card
         v-for="team in props.teamList"
         :desc="team.description"
-        thumb="https://img1.baidu.com/it/u=467212011,1034521901&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500"
+        :thumb="`${team.avatarUrl}`"
         :title="`${team.name} `"
     >
       <template #tags>

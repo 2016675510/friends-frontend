@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import  App from './App.vue'
-import {Icon,Popup,Toast,Button,DatePicker , NavBar,Tabbar, TabbarItem , Search, Tag,Card  } from 'vant';
+import {Icon,Popup,Toast,Button,DatePicker , NavBar,Tabbar, TabbarItem , Search, Tag,Card,Image as VanImage  } from 'vant';
 import * as VueRouter from 'vue-router';
 import routes from "./config/router";
  import Vant from 'vant';
@@ -15,7 +15,7 @@ const router = VueRouter.createRouter({
     routes, // `routes: routes` 的缩写
   })
 app.use(Search);
-
+app.use(VanImage);
 app.use(Popup);
 app.use(DatePicker);
 app.use(Card);

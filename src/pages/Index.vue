@@ -35,10 +35,10 @@ const loadData =async()=>{
                    }else {
                    //普通用户使用分页查询
                    userListData = await  myAxios.get('/user/recommend',{
-                   params: {
-                   pageSize: 8,
-                   pageNum: 1,
-                   },
+                        params: {
+                        pageSize: 8,
+                        pageNum: 1,
+                        },
                    })
                    .then(function (response) {
                      return response?.data?.records;

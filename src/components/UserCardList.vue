@@ -11,7 +11,7 @@
 </script>
 
 <template>
-<van-skeleton title avatar :row="3" :loading="props.loading"  >
+<van-skeleton title avatar :row="3" :loading="props.loading"   >
   <van-card v-for="user in props.userList" 
         :desc="user.profile" 
         :title="`${user.username} (${user.planetCode})`"
